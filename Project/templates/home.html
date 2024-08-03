@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DISEASE RISK PREDICTOR</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+    }
+
+    .navbar {
+        background-color: #09ff00;
+    }
+
+    .navbar-brand {
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .navbar-nav .nav-link {
+        color: #fff;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #ffc107;
+    }
+
+    .about {
+        margin-top: 50px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        height: 80vh;
+        display: flex;
+        width: 60vw;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        align-items: center;
+    }
+
+    h1 {
+        color: #000000;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        color: #000000;
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
+
+    footer {
+        background-color: #000000;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .footer-links {
+        margin-bottom: 20px;
+    }
+
+    .footer-links a {
+        color: #fff;
+        margin: 0 10px;
+    }
+
+    .footer-links a:hover {
+        color: #ffc107;
+    }
+
+    .footer-image {
+        display: block;
+        margin: 0 auto;
+        max-width: 150px;
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+<body style="background-color: #000;">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="color: #000;">Risk Predictor</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                                       
+            </div>
+        </div>
+    </nav>
+
+    <div class="container about">
+      <h1>DISEASE RISK PREDICTOR</h1>
+      <h2>Welcome to our platform! We provide a comprehensive tool for individuals to assess their risk of various diseases based on specific parameters. Our website offers valuable insights to help users stay informed about their health and make proactive decisions for a healthier lifestyle.</h2>
+      <ul class="list-unstyled">
+        <li><a href="{{ url_for('diabetes') }}" class="btn btn-primary btn-block" style="width: 30vw; height: 4vh; font-size: 2rem;">DIABETES PREDICTION</a></li>
+    </ul>
+    
+    
+      <div class="row">
+        <div class="col-md-6">
+            <img src="/static/home.jpg" alt="Healthify Logo" class="footer-image" style="width: 100%; height: auto; max-width: 100%; max-height: 100%; ">
+        </div>
+    
+        <div class="col-md-6">
+            <div class="content" style="font-size: 1.3rem ;">
+                <p>This website serves as a platform where users can predict the likelihood of developing diabetes and heart disease based on various input parameters. By leveraging machine learning techniques and the Flask framework, Healthify provides accurate predictions to help users make informed decisions about their health.</p>
+                <p>Whether you are concerned about diabetes or heart disease, Healthify offers intuitive interfaces for predicting both conditions. Simply input the relevant parameters, and Healthify will provide you with a risk assessment based on data-driven algorithms.</p>
+            </div>
+        </div>
+    </div>
+    
+         
+    <footer class="footer" style="width: 100%;">
+      <div class="container" style="display: flex; justify-content: space-evenly; align-items: stretch;">
+          <div class="row">
+              <div class="col-md-4">
+                  <h3>Social Media</h3>
+                  <div class="footer-links">
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="#"><i class="fab fa-orcid"></i></a>
+                      <a href="#"><i class="fab fa-github"></i></a>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <h3>Contact Us</h3>
+                  <p>Email: co21331@ccet.ac.in</p>
+                  <p>Phone: xxxxxxxxxxxx</p>
+              </div>
+              <div class="col-md-4">
+                <h3>Find Nearby Hospitals</h3>
+                <ul class="list-unstyled">
+                    <li><a href="https://www.google.com/maps/search/hospitals/" target="_blank">Hospitals near me</a></li>
+                </ul>
+                
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
